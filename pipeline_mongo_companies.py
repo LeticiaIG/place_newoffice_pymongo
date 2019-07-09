@@ -25,7 +25,6 @@ def separateColumns(df):
 df1_s = separateColumns(df1)
 #print(df1_s)
 
-
 def ChangeNonNumeric(row):
     row = str(row)
     try:
@@ -52,7 +51,7 @@ def change_string(row):
 def merge_currency_columns(df):
     df['currency'] = df['currency'].apply(change_string)
     df['total_money_raised'] = df['total_money_raised'].apply(change_string)
-    df['currency_n'] = df['total_money_raised'] + df['currency']
+    df['currency'] = df['total_money_raised'] + df['currency']
     return df
 df_1_m = merge_currency_columns(df_1_c)
 print(df_1_m)
@@ -83,7 +82,7 @@ def exchangeRate (row):
         row = row
     return row
 def Apply_exchangeRate(df):
-    df['currency_n'] = df['currency_n'].apply(exchangeRate)
+    df['currency'] = df['currency'].apply(exchangeRate)
     return df
 df1_d = Apply_exchangeRate(df_1_m)
 print(df1_d)
