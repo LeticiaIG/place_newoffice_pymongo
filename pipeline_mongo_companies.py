@@ -87,5 +87,3 @@ def Apply_exchangeRate(df):
     return df
 df1_d = Apply_exchangeRate(df_1_m)
 print(df1_d)
-
-

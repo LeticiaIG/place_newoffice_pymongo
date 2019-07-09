@@ -1,3 +1,7 @@
+#cuaderno:
+pipeline_mongo_companies.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,6 +12,7 @@ __pycache__/
 
 # C extensions
 *.so
+
 
 # Distribution / packaging
 .Python
