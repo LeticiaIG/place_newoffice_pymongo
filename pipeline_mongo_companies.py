@@ -4,7 +4,17 @@ import pprint
 import json
 import pandas as pd
 import requests
+import os
 
+
+# dotenv
+from dotenv import load_dotenv
+load_dotenv()
+OPEN_CAGE_KEY = os.getenv("OPEN_CAGE_KEY")
+G_CLOUD_API_KEY = os.getenv("G_CLOUD_API_KEY")
+
+# GoogleMaps documentation:
+    #https://googlemaps.github.io/google-maps-services-python/docs/
 
 def conectMongo ():
     client = MongoClient('mongodb://localhost:27017/')
@@ -86,3 +96,4 @@ def Apply_exchangeRate(df):
     return df
 df1_d = Apply_exchangeRate(df_1_m)
 print(df1_d)
+
