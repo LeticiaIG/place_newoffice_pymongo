@@ -1,5 +1,4 @@
-### py_mongo_companies
-Where to place a new office gor a Gaming company.
+### Where to place a new office gor a Gaming company.
 
 - Designers like to go to design talks and share knowledge. There must be some nearby companies that also do design.
 - 30% of the company have at least 1 child.
